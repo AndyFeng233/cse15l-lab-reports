@@ -28,4 +28,6 @@ ssh-add ~<place where to store the keys>
 
 9. We are going to copy the **public key** to the home directory of your account. First, we need to sign in to the server by entering **ssh cs15lsp22zz@ieng6.ucsd.edu**. Once signing in, enter **mkdir .ssh** in the terminal. Then, we need to enter **<logout>**. Last, we need to enter **scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys** in the terminal. After following those steps, you are able to log into server without entering the password. The view is shown below. ![image](LoGiN.png)
 
-10. 
+10. Finally, we are going to try out some commands which would make our online running more convenient. After logging into the server, we can try **cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI**. After we enter the commmand, the view below is shown. ![image](funCommand.png) Also, we can try to enter **touch WhereAmI.java** and then entering **ls**. We can notice that the server has two WhereAmI.java, which is shown below. ![image](cpAndLs.png)
+
+
