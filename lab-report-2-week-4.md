@@ -15,3 +15,13 @@ To test the program, I created four different test files.
 3. The test file checks if the program will return the unexpected link as an outpu. [TestSingleFlawLink](https://github.com/AndyFeng233/markdown-parser/blob/main/testfile2.md)
 
 4. The test file aims to test if the program will return the image link. [ImageTest](https://github.com/AndyFeng233/markdown-parser/blob/main/testImage.md)
+
+## Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing
+
+1. 
+
+
+
+## Relationship between the bug, the symptom, and the failure-inducing input
+
+  **Bug** is a flaw in the coding which can cause none or multiple symptoms. **Symptom** is the defected problem that we can see in the terminal, such as wrong output and infinite loop. The **failure-inducing output** aims to trigger the bugs in the codes to produce symptoms. 
