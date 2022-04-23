@@ -22,7 +22,7 @@ To test the program, I created four different test files.
                 return toReturn;
             }`.
 
-2. The failure-inducing input is a list of links mixed with correct format of links and incorrect format of links. The input is shown below. ![image]
+2. The failure-inducing input is a list of links mixed with correct format of links and incorrect format of links. The input is shown below. ![image](ListOfLink.png). The symptom is the return of links that contain both expected and unexpected link. The symptom is shown below. ![image](ListLinkError.png). However, I am still working on fixing the bug that leads to this symptom.
 
 3. The failure-inducing input is a link to the image which has **!** in front of the **[**. The image link is shown below ![image](image.png). The symptom is the return of the image link, which is not what we expect. The screenshot of the symptom is shown below. ![iamge](testi.png). In order to fix the bug that causes the symptom, I write `else if(markdown.indexOf("!") != -1) {
                 return toReturn;
