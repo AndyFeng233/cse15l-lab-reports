@@ -18,9 +18,11 @@ To test the program, I created four different test files.
 
 ## Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing
 
-1. The failure-inducing input is a website link without correct format. The failure-inducing input is shown below ![image](incorrectFormat.png). The sympton is the return of the link, which is not what we expect to happen. In order to fix the bug, I 
+1. The failure-inducing input is a website link without correct format. The failure-inducing input is shown below ![image](incorrectFormat.png). The sympton is the out-of-bound error, which is not what we expect to happen.The symptom is shown below. ![image](outOfBound%20.png) In order to fix the bug, I write ` if(markdown.indexOf("[") == -1 || markdown.indexOf("]") == -1 || markdown.indexOf("(") == -1 || markdown.indexOf(")") == -1 ||markdown.indexOf("!") != -1) {
+                return toReturn;
+            }`.
 
-2.
+2. The failure-inducing input is a list of links mixed with correct format of links and incorrect format of links. The input is shown below. ![image]
 
 3. The failure-inducing input is a link to the image which has **!** in front of the **[**. The image link is shown below ![image](image.png). The symptom is the return of the image link, which is not what we expect. The screenshot of the symptom is shown below. ![iamge](testi.png). In order to fix the bug that causes the symptom, I write `else if(markdown.indexOf("!") != -1) {
                 return toReturn;
