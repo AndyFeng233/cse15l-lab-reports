@@ -12,7 +12,7 @@ To test the program, I created four different test files.
 
 2. The test file is going to test if the program will return multiple expected link without returning the flaw ones. [TestMultipleLink](https://github.com/AndyFeng233/markdown-parser/blob/main/test-file1.md)
 
-3. The test file checks if the program will return the unexpected link as an outpu. [TestSingleFlawLink](https://github.com/AndyFeng233/markdown-parser/blob/main/testfile2.md)
+3. The test file checks if the program will return the unexpected link as an output. [TestSingleFlawLink](https://github.com/AndyFeng233/markdown-parser/blob/main/testfile2.md)
 
 4. The test file aims to test if the program will return the image link. [ImageTest](https://github.com/AndyFeng233/markdown-parser/blob/main/testImage.md)
 
@@ -33,3 +33,11 @@ To test the program, I created four different test files.
 ## Relationship between the bug, the symptom, and the failure-inducing input
 
   **Bug** is a flaw in the coding which can cause none or multiple symptoms. **Symptom** is the defected problem that we can see in the terminal, such as wrong output and infinite loop. The **failure-inducing output** aims to trigger the bugs in the codes to produce symptoms. 
+
+ 1. In the test-file.md, the failure-inducing input is the empty lines at the very end. Those few empty lines trigger the bug in the code. To be more specific, the code fails in its function when reading the empty lines at the end of the files. The failure in code leads to the symptom of compile error. 
+
+ 2. In the test-file1.md, the failure-inducing input is a list of normal website links in correct format mixed with some website links in incorrect format. The bug in code is the failure in recognizing and removing the links in incorrect format. The symptom is the wrong output which prints out the links in incorrect format as well. 
+
+ 3. In the testfile2.md, the failure-inducing input is a single link in incorrect format. The bug in code fails to recognizing and removing the unexpected link. The symptom is the wrong output which prints out the unexpected link. 
+
+ 4. In the testImage.md, the failure-inducing input is a image link. The input will trigger the bug in the code which fails to recognize and removing the unexpected image link. The bug in the code causes the symptom of printing out the unexpected link. 
