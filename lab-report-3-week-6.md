@@ -41,7 +41,9 @@ After logging in and use `ls` to check the contents of my server, the directory 
 In my server account, first type `cd markdown-parse` to change the directory to the markdown-parse. I compile the **MarkdownParseTest.java** by entering `javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java` in the terminal. Then, I run the test by entering `java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`. The result is shown in the screenshot above. 
 
 4. 
-![image](inOneLine.png)
+![image](OneLine.png)
+To combining `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line, I type `scp -r . cs15lsp22aob@ieng6.ucsd.edu:~/markdown-parse; ssh ieng6 "cd markdown-parse";` in the terminal, and the result is shown above. In order to run the test, I type `javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" MarkdownParseTest.java` and `java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest` in the terminal. The result is shown below. 
+![image](FinalRe.png)
 
 
 
