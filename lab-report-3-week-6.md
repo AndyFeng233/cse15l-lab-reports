@@ -28,6 +28,22 @@ The private key is located in the **id_ed25519** which is in the **.ssh** file.
 
 ## Copy whole directories with `scp -r`
 
+1. 
+![image](scpvirtual.png)
+I copy the whole **markdown-parse** directory to my server by typing `scp -r . Andy:~/markdown-parse` in the terminal. 
+
+2. 
+![image](directory.png)
+After logging in and use `ls` to check the contents of my server, the directory markdown-parse is highlighted in green. 
+
+3. 
+![image](runtest.png)
+In my server account, first type `cd markdown-parse` to change the directory to the markdown-parse. I compile the **MarkdownParseTest.java** by entering `javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java` in the terminal. Then, I run the test by entering `java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`. The result is shown in the screenshot above. 
+
+4. 
+![image](inOneLine.png)
+
+
 
 
 
