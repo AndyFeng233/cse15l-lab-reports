@@ -97,7 +97,7 @@ Small code change will make my program work for snippet 2. It is because I only 
 ## Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 ## Ans
-Small code change will make my program work for snippet 3. It is because 
+Small code change will probably not make my program work for snippet 3. It is because I need to write some for-loops to detect if there is space in between lines inside the `[]`. Also, if the link is in the correct format but with space inside the `[]` part, I need to write some codes to deal with that part and decide if it will return the link. 
 
 
 
