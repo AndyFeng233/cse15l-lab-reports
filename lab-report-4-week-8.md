@@ -12,7 +12,7 @@ The test I write for testing snippet1 is shown below.
 ![image](Snippet1.png)
 
 The result of running the test on my own markdown-parse is shown below. 
-![imamge](Snippet1Re.png)
+![image](Snippet1Re.png)
 
 The test didn't pass
 
@@ -24,7 +24,7 @@ The test I write for testing snippet2 is shown below.
 ![image](Snippet2.png)
 
 The result of running the test on my own markdown-parse is shown below. 
-![imamge](Snippet2Re.png)
+![image](Snippet2Re.png)
 
 The test didn't pass
 
@@ -36,7 +36,7 @@ The test I write for testing snippet2 is shown below.
 ![image](snippet3re.png)
 
 The result of running the test on my own markdown-parse is shown below. 
-![imamge](snippet3result.png)
+![image](snippet3result.png)
 
 The test didn't pass
 
