@@ -74,7 +74,7 @@ The test didn't pass
 The preview for the link is shown here. 
 ![image](Preview3.png)
 
-The test I write for testing snippet2 is shown below. 
+The test I write for testing snippet3 is shown below. 
 ![image](snippet3re.png)
 
 The result of running the test on my own markdown-parse is shown below. 
