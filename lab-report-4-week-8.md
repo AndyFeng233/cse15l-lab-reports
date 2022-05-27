@@ -50,7 +50,7 @@ The preview for link is shown here:
 ![image](preview1.png)
 
 The test I write for testing snippet1 is shown below. 
-![image](Snippet1corr.png)
+![image](feng1.png)
 
 The result of running the test on my own markdown-parse is shown below.
 ![image](reSnippet1.png)
@@ -63,7 +63,7 @@ The preview for link is shown here:
 ![image](preview2.png)
 
 The test I write for testing snippet2 is shown below. 
-![image](Snippet2.png)
+![image](feng2.png)
 
 The result of running the test on my own markdown-parse is shown below. 
 ![image](reSnippet2.png)
