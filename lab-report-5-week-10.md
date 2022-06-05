@@ -20,7 +20,24 @@ Answer:
 The expected output of test 194 based on the the CommonMark demo site is shown below. 
 ![image](outputOf194.png)
 
-The output on vimdiff is shown below. 
+The actual output on vimdiff is shown below. 
 ![image](vimdiff1.png)
 
-My own implementation (Andyresult1) has the correct output while the implementation of the given account has the wrong output. 
+The expected output should be [] for test 194. 
+
+My own implementation (Andyresult1) has the correct output because it doesn't output any link while the implementation of the given account (Andyresult) has the wrong output because it outputs a link.
+
+The bug of the given repository is that the code returns a wrong link in which it shouldn't produce any link. The code might have a loop that returns thing that is before or after the expected position. 
+
+**Test 201**
+The expected output of test 201 based on the the CommonMark demo site is shown below.
+![image](outputOf201.png)
+
+The actual output on vimdiff is shown below. 
+![image](vimdiff1.png)
+
+The expected output should be [] for test 201.
+
+My own implementation (Andyresult1) has the correct output because it doesn't output any link while the implementation of the given account (Andyresult) has the wrong output because it outputs a link.
+
+The bug of the given repository is that the code returns a link where it shouldn't. The code did not recognize the absence of `(` after the `[`. So, it should add more conditions to check.  
